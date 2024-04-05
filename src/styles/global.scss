@@ -1,0 +1,17 @@
+// global.scss
+@import 'variables';
+@import '../components/Header/style';
+@import '../components/Footer/style';
+@import '../components/Logo/style';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+// You can add more global styles here
