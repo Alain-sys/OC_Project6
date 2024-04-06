@@ -1,10 +1,23 @@
 @import '../../styles/variables';
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 0px 58px 0px;
+  gap: 20px;
   background-color: #000;
   color: #fff;
 }
 
 .footer__text {
+  text-align: center;
   font-size: var(--fs-header-footer--text);
+}
+
+@media all and (min-width: 1440px) {
+  footer {
+    padding-bottom: 29px;
+    gap: 35px;
+  }
 }

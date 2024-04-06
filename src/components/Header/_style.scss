@@ -15,7 +15,6 @@ header {
 .nav__list-item {
   text-decoration: none;
   font-size: var(--fs-header-footer--text);
-  font-weight: 500;
   color: $link-color;
 }
 
@@ -26,10 +25,6 @@ header {
 
   .nav__list {
     gap: 57px;
-  }
-
-  .nav__list-item {
-    font-size: 2rem;
   }
 }
 

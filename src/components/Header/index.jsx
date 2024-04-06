@@ -4,7 +4,7 @@ import Logo from '../Logo';
 function Header() {
   return (
     <header>
-      <Logo />
+      <Logo logoColored={true} />
       <nav>
         <ul className="nav__list">
           <Link to="" className="nav__list-item">
