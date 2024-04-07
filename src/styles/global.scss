@@ -2,7 +2,12 @@
 @import 'variables';
 @import '../components/Header/style';
 @import '../components/Footer/style';
+@import '../Pages/Home/style';
 @import '../components/Logo/style';
+@import '../components/Banner/style';
+@import '../Pages/Error/style';
+@import '../components/Card/style';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -11,6 +16,18 @@
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
-  letter-spacing: 0.05rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+main {
+  margin: 27px 0;
+  padding: 0 20px;
+}
+
+@media all and (min-width: 1440px) {
+  main {
+    margin: 50px 0;
+    padding: 0 100px;
+  }
 }

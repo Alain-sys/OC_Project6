@@ -1,6 +1,6 @@
 function Logo({ logoColored }) {
   const logo = {
-    class: logoColored && 'logo--colored',
+    class: logoColored ? 'logo--colored' : undefined,
     color: logoColored ? '#FF6060' : '#FFFFFF',
     width: logoColored ? '146' : '122',
     height: logoColored ? '47' : '39',

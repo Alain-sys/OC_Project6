@@ -1,11 +1,20 @@
 $link-color: #000000;
+$main-text-color: #ffffff;
+$error-color: #ff6060;
 
 :root {
   --fs-header-footer--text: 0.75rem;
+  --fs-main-title: 1.5rem;
+  --fs-card-title: 1.125rem;
+  --fs-error-title: 6rem;
+  --fs-error-text: 1.125rem;
 }
 
 @media all and (min-width: 1440px) {
   :root {
     --fs-header-footer--text: 1.5rem;
+    --fs-main-title: 3rem;
+    --fs-error-title: 18rem;
+    --fs-error-text: 2.25rem;
   }
 }

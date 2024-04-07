@@ -1,14 +1,22 @@
-import { Link, Outlet } from 'react-router-dom';
+// @ts-ignore image path
+import BannerHeaderImage from '../../assets/banner/header-banner.png';
+import Banner from '../../components/Banner';
+import AccommodationCard from '../../components/Card';
+import accommodationDatas from '../../data/logements.json';
 
 function HomePage() {
   return (
-    <div>
-      <h1>Welcome to the Homepage!</h1>
-      <nav>
-        <Link to="detail">Go to Detail Page</Link>
-      </nav>
-      <Outlet /> {/* This is where child routes will be rendered */}
-    </div>
+    <main className="main-home">
+      <Banner bannerImage={BannerHeaderImage} title={true} />
+      <section className="location">
+        {accommodationDatas.map((accommodation) => (
+          <AccommodationCard
+            key={accommodation.id}
+            accommodation={accommodation}
+          />
+        ))}
+      </section>
+    </main>
   );
 }
 

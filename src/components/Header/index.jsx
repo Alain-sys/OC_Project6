@@ -7,10 +7,10 @@ function Header() {
       <Logo logoColored={true} />
       <nav>
         <ul className="nav__list">
-          <Link to="" className="nav__list-item">
+          <Link to="/" className="nav__list-item">
             Accueil
           </Link>
-          <Link to="" className="nav__list-item">
+          <Link to="/About" className="nav__list-item">
             A propos
           </Link>
         </ul>

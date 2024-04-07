@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.banner {
+  position: relative;
+  display: flex;
+  height: 111px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner__decoration {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner__line {
+  display: block;
+  font-size: var(--fs-main-title);
+  color: $main-text-color;
+}
+
+@media all and (min-width: 1440px) {
+  .banner {
+    height: 223px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .banner__decoration {
+    justify-content: center;
+  }
+
+  .banner__line {
+    display: inline;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000, 0px 4px 10px #000000;
+  }
+}
