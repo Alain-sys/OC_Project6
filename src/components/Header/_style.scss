@@ -18,6 +18,10 @@ header {
   color: $link-color;
 }
 
+.nav__list-item.active {
+  text-decoration: underline;
+}
+
 @media all and (min-width: 1440px) {
   header {
     padding: 45px 100px 0 100px;

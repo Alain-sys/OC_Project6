@@ -8,6 +8,8 @@ $error-color: #ff6060;
   --fs-card-title: 1.125rem;
   --fs-error-title: 6rem;
   --fs-error-text: 1.125rem;
+  --fs-drop-down-title: 0.8125rem;
+  --fs-drop-down-description: 0.75rem;
 }
 
 @media all and (min-width: 1440px) {
@@ -16,5 +18,7 @@ $error-color: #ff6060;
     --fs-main-title: 3rem;
     --fs-error-title: 18rem;
     --fs-error-text: 2.25rem;
+    --fs-drop-down-title: 1.5rem;
+    --fs-drop-down-description: 1.125rem;
   }
 }

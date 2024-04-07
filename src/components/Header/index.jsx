@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../Logo';
 
 function Header() {
@@ -7,12 +7,12 @@ function Header() {
       <Logo logoColored={true} />
       <nav>
         <ul className="nav__list">
-          <Link to="/" className="nav__list-item">
+          <NavLink to="/" className="nav__list-item">
             Accueil
-          </Link>
-          <Link to="/About" className="nav__list-item">
+          </NavLink>
+          <NavLink to="/About" className="nav__list-item">
             A propos
-          </Link>
+          </NavLink>
         </ul>
       </nav>
     </header>
