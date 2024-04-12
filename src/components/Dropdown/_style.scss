@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .drop-down {
   border-radius: 10px;
   background-color: #f6f6f6;
@@ -16,6 +18,9 @@
   padding: 0 12px 0 10px;
   background-color: #ff6060;
   border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .drop-down__summary-title {

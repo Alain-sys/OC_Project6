@@ -34,9 +34,11 @@ function About() {
   return (
     <main className="main-about">
       <Banner bannerImage={BannerAboutImage} />
-      {DropDownDatas.map((data) => (
-        <DropDown key={data.id} title={data.title} content={data.content} />
-      ))}
+      <div className="drop-down-container">
+        {DropDownDatas.map((data) => (
+          <DropDown key={data.id} title={data.title} content={data.content} />
+        ))}
+      </div>
     </main>
   );
 }

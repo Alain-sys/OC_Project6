@@ -1,24 +1,16 @@
-import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Slider from '../../components/Slider';
 import accommodationsDatas from '../../data/logements.json';
 
 function Accommodation() {
   const { id } = useParams();
-  const [accommodation, setAccommodation] = useState(null);
+  const foundAccommodation = accommodationsDatas.find((acc) => acc.id === id);
 
-  useEffect(() => {
-    const foundAccommodation = accommodationsDatas.find((acc) => acc.id === id);
-    setAccommodation(foundAccommodation);
-  }, [id]);
-
-  if (!accommodation) {
-    return <div className="no-datas">Pas de données</div>;
-  }
-  console.log(accommodation, 'accommodation');
   return (
     <main>
-      <Slider />
+      {foundAccommodation.pictures || foundAccommodation.pictures.length > 0 ? (
+        <Slider accommodationImageList={foundAccommodation.pictures} />
+      ) : null}
       <div></div>
     </main>
   );
