@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './Pages/About';
+import Accommodation from './Pages/Accommodation';
 import ErrorPage from './Pages/Error';
 import HomePage from './Pages/Home';
 import Footer from './components/Footer';
@@ -11,9 +12,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="*" element={<ErrorPage />} /> {/* Handles 404 errors */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<ErrorPage />} />
         <Route path="/About" element={<About />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
       </Routes>
       <Footer />
     </BrowserRouter>
