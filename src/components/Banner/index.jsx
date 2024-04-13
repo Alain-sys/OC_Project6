@@ -6,7 +6,7 @@ function Banner({ bannerImage, title }) {
         <img
           className="banner__image"
           src={bannerImage}
-          alt="moutains landscape"
+          alt="paysage montagneux"
         />
         {title && (
           <h1 className="banner__title">

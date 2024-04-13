@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 .drop-down {
+  width: 100%;
   border-radius: 10px;
   background-color: #f6f6f6;
 }
@@ -34,6 +35,10 @@
 
 .drop-down__content {
   padding: 13px 20px 20px 20px;
+}
+
+.drop-down__list {
+  list-style: none;
 }
 
 .drop-down__description {

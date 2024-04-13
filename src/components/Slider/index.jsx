@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 // @ts-ignore image path
-import sliderLeftArrow from '../../assets/icon/sliderLeftArrow.svg';
+import sliderLeftArrow from '../../assets/icon/slider-left-arrow.svg';
 // @ts-ignore image path
-import sliderRightArrow from '../../assets/icon/sliderRightArrow.svg';
+import sliderRightArrow from '../../assets/icon/slider-right-arrow.svg';
 
 function Slider({ accommodationImageList }) {
   const [index, setIndex] = useState(0);
@@ -35,13 +35,13 @@ function Slider({ accommodationImageList }) {
         <img
           className="slider__btn__icon"
           src={sliderLeftArrow}
-          alt="icon left arrow"
+          alt="flèche gauche"
         />
       </button>
       <img
         className="slider__image"
         src={accommodationImage}
-        alt="accommodation"
+        alt="le logement"
       />
       <button
         type="button"
@@ -51,7 +51,7 @@ function Slider({ accommodationImageList }) {
         <img
           className="slider__btn__icon"
           src={sliderRightArrow}
-          alt="icon right arrow"
+          alt="flèche droite"
         />
       </button>
       <p className="slider__image--count">

@@ -10,6 +10,9 @@ $clr-main: #ff6060;
   --fs-error-text: 1.125rem;
   --fs-drop-down-title: 0.8125rem;
   --fs-drop-down-description: 0.75rem;
+  --fs-accommodation-title: 1.125rem;
+  --fs-accommodation-location: 0.875rem;
+  --fs-accommodation-host-name: 0.75rem;
 }
 
 @media all and (min-width: 1440px) {
@@ -20,5 +23,8 @@ $clr-main: #ff6060;
     --fs-error-text: 2.25rem;
     --fs-drop-down-title: 1.5rem;
     --fs-drop-down-description: 1.125rem;
+    --fs-accommodation-title: 2.25rem;
+    --fs-accommodation-location: 1.125rem;
+    --fs-accommodation-host-name: 1.125rem;
   }
 }

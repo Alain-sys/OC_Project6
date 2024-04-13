@@ -1,0 +1,116 @@
+.accommodation-description {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 13px 0;
+  gap: 16px;
+}
+
+.accommodation-description__headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.accommodation-description__title {
+  font-size: var(--fs-accommodation-title);
+  color: $clr-main;
+}
+
+.accommodation-description__location {
+  margin: 5px 0 10px 0;
+  font-size: var(--fs-accommodation-location);
+  font-weight: 600;
+}
+
+.accommodation-description__tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.accommodation-description__tags {
+  padding: 2px 22px;
+  border-radius: 5px;
+  background-color: $clr-main;
+  color: $clr-main-text;
+}
+
+.accommodation-description__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accommodation-description__stars-container {
+  display: flex;
+  gap: 5px;
+}
+
+.accommodation-description__host-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accommodation-description__host-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.accommodation-description__host-first-name,
+.accommodation-description__host-last-name {
+  font-size: var(--fs-accommodation-host-name);
+  color: $clr-main;
+}
+
+.accommodation-description__host-last-name {
+  margin-left: auto;
+}
+
+.accommodation-description__host-picture {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.accommodation-drop-down-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media all and (min-width: 1440px) {
+  .accommodation-description {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 24px 0;
+  }
+
+  .accommodation-description__location {
+    margin-bottom: 20px;
+  }
+
+  .accommodation-description__tags {
+    padding: 3px 30px;
+    border-radius: 10px;
+  }
+
+  .accommodation-description__details {
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .accommodation-description__stars-container {
+    gap: 10px;
+    order: 1;
+  }
+
+  .accommodation-description__host-picture {
+    height: 64px;
+    width: 64px;
+  }
+
+  .accommodation-drop-down-container {
+    flex-direction: row;
+    gap: 76px;
+  }
+}
