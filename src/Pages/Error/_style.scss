@@ -12,19 +12,19 @@
 
 .error-page__title {
   font-size: var(--fs-error-title);
-  color: $error-color;
+  color: $clr-main;
 }
 
 .error-page__text {
   padding: 0 57px;
   font-size: var(--fs-error-text);
-  color: $error-color;
+  color: $clr-main;
   line-height: 30px;
 }
 
 .error-page__link {
   font-size: 0.875rem;
-  color: $link-color;
+  color: $clr-link;
 }
 
 @media all and (min-width: 1440px) {

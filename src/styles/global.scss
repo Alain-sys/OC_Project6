@@ -10,6 +10,7 @@
 @import '../components/Dropdown/style';
 @import '../Pages/About/style';
 @import '../Pages/Accommodation/style';
+@import '../components/Slider/style';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 * {
@@ -26,6 +27,11 @@ body {
 main {
   margin: 27px 0;
   padding: 0 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 @media all and (min-width: 1440px) {

@@ -16,17 +16,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 12px 0 10px;
-  background-color: #ff6060;
+  background-color: $clr-main;
   border-radius: 5px;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .drop-down__summary-title {
   font-size: var(--fs-drop-down-title);
   font-weight: bold;
-  color: $main-text-color;
+  color: $clr-main-text;
 }
 
 .drop-down__icon {
@@ -47,6 +44,9 @@
 @media all and (min-width: 1440px) {
   .drop-down__summary {
     height: 54px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .drop-down__icon {

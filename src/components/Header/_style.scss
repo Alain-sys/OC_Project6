@@ -15,7 +15,7 @@ header {
 .nav__list-item {
   text-decoration: none;
   font-size: var(--fs-header-footer--text);
-  color: $link-color;
+  color: $clr-link;
 }
 
 .nav__list-item.active {
