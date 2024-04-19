@@ -27,33 +27,42 @@ function Slider({ accommodationImageList }) {
 
   return (
     <div className="slider">
-      <button
-        type="button"
-        className="slider__btn slider__btn--prev"
-        onClick={handlePrevClick}
-      >
-        <img
-          className="slider__btn__icon"
-          src={sliderLeftArrow}
-          alt="flèche gauche"
-        />
-      </button>
+      {accommodationImageList.length > 1 ? (
+        <button
+          type="button"
+          className="slider__btn slider__btn--prev"
+          onClick={handlePrevClick}
+        >
+          <img
+            className="slider__btn__icon"
+            src={sliderLeftArrow}
+            alt="flèche gauche"
+          />
+        </button>
+      ) : (
+        <span></span>
+      )}
       <img
         className="slider__image"
         src={accommodationImage}
         alt="le logement"
       />
-      <button
-        type="button"
-        className="slider__btn slider__btn--next"
-        onClick={handleNextClick}
-      >
-        <img
-          className="slider__btn__icon"
-          src={sliderRightArrow}
-          alt="flèche droite"
-        />
-      </button>
+      {accommodationImageList.length > 1 ? (
+        <button
+          type="button"
+          className="slider__btn slider__btn--next"
+          onClick={handleNextClick}
+        >
+          <img
+            className="slider__btn__icon"
+            src={sliderRightArrow}
+            alt="flèche droite"
+          />
+        </button>
+      ) : (
+        <span></span>
+      )}
+
       <p className="slider__image--count">
         {index + 1}/{accommodationImageList.length}
       </p>

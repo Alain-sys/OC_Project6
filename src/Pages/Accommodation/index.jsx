@@ -3,10 +3,14 @@ import DropDown from '../../components/Dropdown';
 import Rating from '../../components/Rating';
 import Slider from '../../components/Slider';
 import accommodationsDatas from '../../data/logements.json';
+import ErrorPage from '../Error';
 
 function Accommodation() {
   const { id } = useParams();
   const accommodation = accommodationsDatas.find((acc) => acc.id === id);
+  if (!accommodation) {
+    return <ErrorPage />;
+  }
   const [firstName, lastName] = accommodation.host.name.split(' ');
 
   return (
