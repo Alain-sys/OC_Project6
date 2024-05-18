@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 // @ts-ignore image path
 import sliderLeftArrow from '../../assets/icon/slider-left-arrow.svg';
 // @ts-ignore image path
@@ -7,13 +7,11 @@ import sliderRightArrow from '../../assets/icon/slider-right-arrow.svg';
 function Slider({ accommodationImageList }) {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
     if (index < 0) {
       setIndex(accommodationImageList.length - 1);
     } else if (index >= accommodationImageList.length) {
       setIndex(0);
     }
-  }, [index]);
 
   const handlePrevClick = () => {
     setIndex((prev) => prev - 1);
