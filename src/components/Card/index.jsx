@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function AccommodationCard({ accommodation }) {
+function Card({ accommodation }) {
   return (
     <Link
       to={`/accommodation/${accommodation.id}`}
@@ -13,4 +13,4 @@ function AccommodationCard({ accommodation }) {
   );
 }
 
-export default AccommodationCard;
+export default Card;
